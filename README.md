@@ -30,8 +30,10 @@ This is a step by step process with commands included. Be sure to replace `4.16`
    * `$ sed -i 's/virt-4-16/virt-4-17/g' virt/release_notes/virt-4-17-release-notes.adoc`
 5. Replace old version string with the new version string in the `_topic_map.yml` file:
    * `$ sed -i 's/virt-4-16-release-notes/virt-4-17-release-notes/g' _topic_maps/_topic_map.yml`
-6. Remove all content under *New and changed features*, *Bug fixes*, and *Removed features* in the release-note file while making sure to leave the headers of the sections.
-7. Save all changes and submit your pull request.
+6.  Replace old version string with the new version string in the OCP `addtl-release-notes.adoc` file:
+   * `$ sed -i 's/virt-4-16-release-notes/virt-4-17-release-notes/g' release_notes/addtl-release-notes.adoc`
+7. Remove all content under *New and changed features*, *Bug fixes*, and *Removed features* in the release-note file while making sure to leave the headers of the sections.
+8. Save all changes and submit your pull request.
 
 **Example PR**: [Link](https://github.com/openshift/openshift-docs/pull/79779)
 
