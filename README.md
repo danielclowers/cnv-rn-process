@@ -33,13 +33,15 @@ This is a step by step process with commands included. Be sure to replace `4.17`
 6. Replace old version string with the new version string in the OCP `addtl-release-notes.adoc` file:
    * `$ sed -i 's/virt-4-17-release-notes/virt-4-18-release-notes/g' release_notes/addtl-release-notes.adoc`
 7. Remove all content under *New and changed features*, *Bug fixes*, and *Removed features* in the release-note file while making sure to leave the headers of the sections.
-8. Save all changes and submit your pull request.
+8. For `Technology Preview features` you need to check if there has been a change in their status (for example, Tech Preview moving to General Availability). If there has been a change, then update the notes accordingly. If not, keep the release note as is.
+9. For `Deprecated and removed features` you need to check if there has been a change in their status (for example, a deprecated features has been removed).If there has been a change, then update the notes accordingly. If not, keep the release note as is.
+10. Save all changes and submit your pull request.
 
 **Example PR**: [Link](https://github.com/openshift/openshift-docs/pull/79779)
 
 ### Release Note Placeholder File
 
-For builds and tests to be successful in your GitHub pull request, you must open a separate PR to add a dummy release notes file to the main branch. This is a step by step process with commands included. Be sure to replace `4.18` with the version you are working on.
+For builds and tests to be successful in your GitHub pull request, you must open a separate PR to add a placeholder release notes file to the main branch. This is a step by step process with commands included. Be sure to replace `4.18` with the version you are working on.
 
 1. Check out the branch of the new version:
    * `$ git checkout main ; git fetch upstream`
@@ -64,3 +66,6 @@ For builds and tests to be successful in your GitHub pull request, you must open
 5. Save all changes and submit your pull request.
 
 **Example PR**: [Link](https://github.com/openshift/openshift-docs/pull/79783)
+
+### Resources
+* [OpenShift Virtualization Release Note Process Google Doc](https://docs.google.com/document/d/1nXMbam5rbReArayNSHOzzlHBK5Pi0ezCn6vXmrdOoSY/edit?usp=sharing)
