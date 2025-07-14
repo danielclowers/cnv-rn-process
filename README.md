@@ -35,7 +35,7 @@ This is a step by step process with commands included. Be sure to replace `4.17`
 7. Remove all content under *New and changed features*, *Bug fixes*, and *Removed features* in the release-note file while making sure to leave the headers of the sections.
 8. For `Technology Preview features` you need to check if there has been a change in their status (for example, Tech Preview moving to General Availability). If there has been a change, then update the notes accordingly. If not, keep the release note as is.
 9. For `Deprecated and removed features` you need to check if there has been a change in their status (for example, a deprecated features has been removed).If there has been a change, then update the notes accordingly. If not, keep the release note as is.
-10. Save all changes and submit your pull request.
+10. Save all changes and submit your pull request. Only merge review from the CNV team is necessary.
 
 **Example PR**: [Link](https://github.com/openshift/openshift-docs/pull/79779)
 
@@ -63,7 +63,7 @@ For builds and tests to be successful in your GitHub pull request, you must open
     
     This file is here to allow builds to work.
     ```
-5. Save all changes and submit your pull request.
+5. Save all changes and submit your pull request. Only merge review from the CNV team is necessary.
 
 **Example PR**: [Link](https://github.com/openshift/openshift-docs/pull/79783)
 
